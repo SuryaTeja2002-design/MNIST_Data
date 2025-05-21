@@ -36,17 +36,17 @@ This project includes experimentation with generative AI capabilities for:
 
 ##  How to Run
 # 1. Clone the repository
-git clone https://github.com/SuryaTeja2002-design/MNIST_Data.git
-cd MNIST_Data
+```git clone https://github.com/SuryaTeja2002-design/MNIST_Data.git```
+```cd MNIST_Data```
 
 # 2. Deploy the Dataflow ETL job
-python DataFlow.py
+```python DataFlow.py```
 
 # 3. Build and run the inference container locally
-docker build -t mnist-detector .
-docker run -p 8080:8080 mnist-detector
+```docker build -t mnist-detector .```
+```docker run -p 8080:8080 mnist-detector```
 
 # 4. Send a test inference request
-curl -X POST -d @sample_image.json http://localhost:8080/infer
+```curl -X POST -d @sample_image.json http://localhost:8080/infer```
 
 
